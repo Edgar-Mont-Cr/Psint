@@ -1,4 +1,4 @@
-Algoritmo sin_titulo
+Algoritmo EDGAR
 	Imprimir "bienvenido"
 	Imprimir "¿cual es tu nombre?"
 	leer nom
@@ -12,12 +12,16 @@ Algoritmo sin_titulo
 	leer dias
 	imprimir "has trabajado hras extra si si anota cuantas horas as trabajado"
 	leer ext
+	tru=sue/6
+	hub=tru*dias
+	
+	hora=tru/8
 	si ext<=8 Entonces
-		pago_horas_extra=ext*sue/48*2
+		pago_horas_extra=ext*hora*2
 	SiNo
-		pago_horas_extra=8*sue/48*2+(ext-8)*sue/48*3
+		pago_horas_extra=(8*hora*2)+((ext-8)*hora*3)
 	FinSi
-	total=sue+pago_horas_extra
+	total=hub+pago_horas_extra
 	si total<=2500 Entonces
 		deducion_lisr=total*0.04
 	SiNo
